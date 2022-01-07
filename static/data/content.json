@@ -1,0 +1,26 @@
+{
+  "featured": {
+    "image": "/assets/img/freestuff_banner.png",
+    "title": "FreeStuff Discord Bot",
+    "description": "The FreeStuff Discord Bot provides you with real-time notifications about free games. Never miss out on any freebies!",
+    "url": "https://freestuffbot.xyz/",
+    "blog": "freestuff"
+  },
+  "list": [
+    {
+      "image": "/assets/img/external/discord_banner.jpg",
+      "title": "Join our community discord",
+      "url": "https://tude.club/discord"
+    },
+    {
+      "image": "/assets/img/linjo_banner.png",
+      "title": "Linjo out now",
+      "url": "https://tude.club/linjo"
+    },
+    {
+      "image": "/assets/img/aboutus_banner.png",
+      "title": "About us",
+      "url": "/about"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+@import "./variables.scss";
+
+
+h1 {
+  font-family: $font-header;
+  font-size: 40pt;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: $font-header;
+  font-size: 24pt;
+  font-weight: 400;
+}
+
+p {
+  font-family: $font-regular;
+  font-weight: 400;
+}
+
+img {
+  pointer-events: none;
+}
+
+a:not([href]) {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
