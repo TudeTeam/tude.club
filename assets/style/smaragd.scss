@@ -1,0 +1,54 @@
+
+
+$theme-mint: var(--theme-mint);
+$theme-mint-hov: var(--theme-mint-hov);
+$theme-mint-contrast: var(--theme-mint-contrast);
+$theme-forrest: var(--theme-forrest);
+$theme-forrest-hov: var(--theme-forrest-hov);
+$theme-forrest-contrast: var(--theme-forrest-contrast);
+$theme-forrest40: var(--theme-forrest40);
+$theme-links: var(--theme-links);
+$theme-links-hov: var(--theme-links-hov);
+$theme-links20: var(--theme-links20);
+
+$color-header: var(--color-header);
+$color-major: var(--color-major);
+$color-regular: var(--color-regular);
+$color-minor: var(--color-minor);
+$color-sub: var(--color-sub);
+$color-border: var(--color-border);
+$bg-lighter: var(--bg-lighter);
+$bg-light: var(--bg-light);
+$bg-regular: var(--bg-regular);
+$bg-dark: var(--bg-dark);
+$bg-darker: var(--bg-darker);
+$spacing-regular: var(--spacing-regular);
+$spacing-tight: var(--spacing-tight);
+$spacing-loose: var(--spacing-loose);
+$spacing-page-width: var(--spacing-page-width);
+$spacing-content-height: var(--spacing-content-height);
+$font-header: var(--font-header);
+$font-major: var(--font-major);
+$font-regular: var(--font-regular);
+$font-minor: var(--font-minor);
+$font-sub: var(--font-sub);
+$br-regular: var(--br-regular);
+$br-tight: var(--br-tight);
+$br-loose: var(--br-loose);
+$bw: var(--bw);
+
+
+/*
+ *
+ */
+
+body [smaragd-button] {
+  button, a {
+    border-radius: $br-loose;
+    padding: 0 20pt;
+  }
+
+  span {
+    font-size: 10pt;
+  }
+}

@@ -1,0 +1,23 @@
+
+
+p a {
+  position: relative;
+  color: $theme-links;
+  text-decoration: none;
+  border-bottom: 1px dashed currentColor;
+
+  &:hover {
+    color: $theme-links-hov;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -2pt;
+      left: -2pt;
+      width: calc(100% + 4pt);
+      height: calc(100% + 4pt);
+      background-color: $theme-links20;
+      border-radius: 2pt;
+    }
+  }
+}
