@@ -32,6 +32,7 @@ export default defineAppConfig({
       pageWidth: '700pt'
     },
     look: {
+      borderRadiusRegular: '12pt',
       borderRadiusLoose: '999pt'
     }
   } satisfies SmaragdConfig

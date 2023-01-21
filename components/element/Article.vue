@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <article :style="{ '--delay': `${delay}ms` }">
     <div class="inner">
       <div class="image">
         <img :src="img" alt="">
@@ -22,6 +22,7 @@ const {
   img,
   title,
   content,
+  delay,
   half,
   button1Text,
   button1Url,
@@ -31,6 +32,7 @@ const {
   img: { type: String, required: true },
   title: { type: String, required: true },
   content: { type: String, required: true },
+  delay: { type: Number, required: false },
   half: { type: Boolean, default: false },
   button1Text: { type: String, required: true },
   button1Url: { type: String, required: true },
@@ -42,11 +44,18 @@ const {
 <style lang="scss">
 article {
   background-color: $bg-regular;
-  border-radius: $br-regular;
   box-shadow: 0 5pt $spacing-regular $theme-forrest40;
   overflow: hidden;
   position: relative;
   z-index: 2;
+  opacity: 0;
+  border-radius: calc($br-regular * 5);
+  transform: translateY($spacing-regular);
+  animation-name: fadein;
+  animation-duration: .5s;
+  animation-delay: var(--delay);
+  animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+  animation-fill-mode: forwards;
 
   .image {
     background-color: $theme-forrest;
@@ -65,7 +74,7 @@ article {
 
   .fade {
     margin-top: -70pt;
-    height: 70pt;
+    height: 71pt;
     background: linear-gradient(180deg, #ffffff00, #ffffff);
   }
 
@@ -84,6 +93,19 @@ article {
     p[data-half=true], h2[data-half=true] {
       width: 50%;
     }
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    border-radius: calc($br-regular * 5);
+    transform: translateY($spacing-regular);
+  }
+  to {
+    opacity: 1;
+    border-radius: $br-regular;
+    transform: translateY(0);
   }
 }
 </style>

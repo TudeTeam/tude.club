@@ -27,6 +27,10 @@ const background = computed(() => backgrounds[route.name] ?? '')
 body #smaragd-app {
   background: transparent;
 }
+
+body [smaragd-page] {
+  padding-top: 0 !important;
+}
 </style>
 
 <style scoped lang="scss">
