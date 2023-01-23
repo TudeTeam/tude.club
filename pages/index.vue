@@ -1,6 +1,6 @@
 <template>
   <ElementArticle
-    img="https://tude.club/assets/img/freestuff_banner.png"
+    img="/assets/img/freestuff_banner.png"
     title="FreeStuff Discord Bot"
     content="The FreeStuff Discord Bot provides you with real-time notifications about free games. Never miss out on any freebies!"
     :delay="600"
@@ -12,7 +12,7 @@
   />
   <Layout name="22">
     <ElementArticle
-      img="https://tude.club/assets/img/linjo_banner.png"
+      img="/assets/img/linjo_banner.png"
       title="Linjo Out Now"
       content="Tude presents: A fast paced arcade style mobile game. Out now."
       :delay="700"
@@ -21,7 +21,7 @@
       button1Url="https://play.google.com/store/apps/details?id=de.tude.lines"
     />
     <ElementArticle
-      img="https://tude.club/assets/img/external/discord_banner.jpg"
+      img="/assets/img/discord_banner.jpg"
       title="Join Our Discord Community"
       content=""
       :delay="800"
