@@ -15,9 +15,10 @@
       </NuxtLink>
     </nav>
     <div id="user">
-      <button
+      <NuxtLink
         @click="login()"
         :data-light="useLightTheme"
+        to="/login"
         v-text="'Login'"
       />
     </div>
@@ -83,8 +84,8 @@ nav {
   display: flex;
   justify-content: flex-end;
 
-  button {
-    padding: 2pt 24pt;
+  button, a {
+    padding: 0 24pt;
     border: none;
     border-radius: 99pt;
     background-color: $bg-dark;
@@ -93,6 +94,8 @@ nav {
     font-family: $font-major;
     color: $color-major;
     font-size: 10pt;
+    text-decoration: none;
+    line-height: $spacing-content-height;
 
     &:hover {
       background-color: $bg-darker;
