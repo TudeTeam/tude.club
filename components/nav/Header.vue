@@ -15,17 +15,16 @@
       </NuxtLink>
     </nav>
     <div id="user">
-      <NuxtLink
-        @click="login()"
+      <button
+        @click="login"
         :data-light="useLightTheme"
-        to="/login"
         v-text="'Login'"
       />
     </div>
   </header>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const nav = [
   { name: 'About us', href: '/about' },
   { name: 'Legal', href: '/legal' }
@@ -34,9 +33,10 @@ const nav = [
 const router = useRouter()
 
 const lightThemePages = [ 'index' ]
-const useLightTheme = computed(() => lightThemePages.includes(router.currentRoute.value.name))
+const useLightTheme = computed(() => lightThemePages.includes(router.currentRoute.value.name as string))
 
 function login() {
+  navigateTo('https://account.tude.club/login')
 }
 </script>
 
