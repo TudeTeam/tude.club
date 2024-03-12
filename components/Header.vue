@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="logo" @click="router.push('/')">
+    <div class="logo" @click="navigateTo('/')">
       <img v-if="useLightTheme" src="~/assets/img/logo_white.svg" alt="">
       <img v-else src="~/assets/img/logo_black.svg" alt="">
     </div>
@@ -30,10 +30,12 @@ const nav = [
   { name: 'Legal', href: '/legal' }
 ]
 
-const router = useRouter()
+// const router = useRouter()
 
-const lightThemePages = [ '' ]
-const useLightTheme = computed(() => lightThemePages.includes(router.currentRoute.value.name as string))
+// const lightThemePages = [ '' ]
+// const useLightTheme = computed(() => lightThemePages.includes(router.currentRoute.value.name as string))
+
+const useLightTheme = false
 </script>
 
 <style scoped lang="scss">
