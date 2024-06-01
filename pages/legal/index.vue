@@ -1,6 +1,12 @@
 <template>
   <h1>Tude Legal</h1>
 
+  <h2>Account</h2>
+  <ul>
+    <li><NuxtLink to="/legal/account-privacy">Privacy Policy</NuxtLink></li>
+    <li><NuxtLink to="/legal/account-terms">Terms of Service</NuxtLink></li>
+  </ul>
+
   <h2>Linjo</h2>
   <ul>
     <li><NuxtLink to="/legal/linjo-privacy">Privacy Policy</NuxtLink></li>
