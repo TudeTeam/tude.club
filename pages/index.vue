@@ -38,6 +38,12 @@
       description="Taking professionalism to a professional level."
       url="./about"
     />
+    <LinkCard
+      icon="IconAccount"
+      title="Tude Account"
+      description="Log in or manage your Tude Account."
+      url="https://account.tude.club/login"
+    />
   </div>
 
   <footer />
